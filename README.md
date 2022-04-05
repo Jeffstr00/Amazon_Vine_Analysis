@@ -10,12 +10,18 @@ In in attempt to answer that question, we looked at a humongous dataset featurin
 
 ## Results
 
-After loading in the dataset from our S3 server, we created our Vine DataFrame using `vine_df = df.select(["review_id", "star_rating", "helpful_votes", "total_votes", "vine", "verified_purchase"])`.  However, before we actually began comparing Vine to non-Vine reviews, we had a bit of filtering to do in order to ensure that our results would be more reliable, and not skewed by items with either non-helpful `((helpful_votes/total_votes)>=.5)` or a small number `("total_votes>=20")` of reviews.  This is one advantage of working with such huge datasets: you still have plenty of useful information to work with after trimming away the fat.  
+After loading in the dataset from our S3 server, we created our Vine DataFrame using `vine_df = df.select(["review_id", "star_rating", "helpful_votes", "total_votes", "vine", "verified_purchase"])`.  However, before we actually began comparing Vine to non-Vine reviews, we had a bit of filtering to do in order to ensure that our results would be more reliable.  Filtering by `((helpful_votes/total_votes)>=.5)` ensured that we looked at products with reviews that were largely helpful, while `("total_votes>=20")` left us with items with at least 20 reviews so that they couldn't be easily be skewed by outlier reviews.  This is one advantage of working with such huge datasets: you still have plenty of useful information to work with after trimming away the fat.  Now that we had a had what should be a solid, reliable dataset to work with, we could get to actually answering the questions:
 
-* How many Vine reviews and non-Vine reviews were there?
+* **How many Vine reviews and non-Vine reviews were there?**
 
-* How many Vine reviews were 5 stars?  How many non-Vine reviews were 5 stars?
+Blah
 
-* What percentage of Vine reviews were 5 stars?  What percentage of non-Vine reviews were 5 stars?
+* **How many Vine reviews were 5 stars?  How many non-Vine reviews were 5 stars?**
+
+Blah
+
+* **What percentage of Vine reviews were 5 stars?  What percentage of non-Vine reviews were 5 stars?**
+
+Blah
 
 ## Summary
