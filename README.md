@@ -29,7 +29,7 @@ After accumulating all of our information, we displayed our results using the fo
 print("======================================================")
 print(f"Total number of paid (Vine) reviews: \033[1m{paid_total}\033[0m")
 print(f"Number of paid 5-star reviews: \033[1m{paid_five}\033[0m")
-print(f"Percentage of paid reviews with 5-star reviews: \033[1m{paid_five_percent:.2f}%\033[0m")```
+print(f"Percentage of paid reviews with 5-star reviews: \033[1m{paid_five_percent:.2f}%\033[0m") ```
 
 ![Paid Summary](https://github.com/Jeffstr00/Amazon_Vine_Analysis/blob/main/Resources/paid_summary.png)
 
