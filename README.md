@@ -37,3 +37,6 @@ print(f"Percentage of paid reviews with 5-star reviews: \033[1m{paid_five_percen
 ![Unpaid Summary](https://github.com/Jeffstr00/Amazon_Vine_Analysis/blob/main/Resources/unpaid_summary.png)
 
 ## Summary
+
+At least when looking at five star reviews for books, there does **not** appear to be a positivity bias in the Vine program.  In fact, it is the opposite: unpaid reviews are 45.72% five star while paid reviews receive five star ratings only 40.52% of the time.  Given such a relatively large difference (45.72 vs 40.52%) over such a huge sample size, it is extraordinarily likely that the result is statistically significant, and this was confirmed using [InvestDigital's Significance Calculator](https://www.investisdigital.com/insights/resources-and-tools/statistical-significance-calculator):
+![Statistically Significant](https://github.com/Jeffstr00/Amazon_Vine_Analysis/blob/main/Resources/statistically_significant.png)
