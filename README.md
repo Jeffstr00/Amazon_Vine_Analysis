@@ -45,4 +45,16 @@ How could this be?  At first glance, these results seem counterintuitive.  After
 
 However, that does not necessarily mean that there is an overall negative bias for paid Vine reviews.  It is possible that, instead of unpaid reviews always being higher (which was observed in this case with five star reviews), maybe they are more extreme, meaning that they higher five and one star reviews (with Vine reviews being more moderate).  In a way, that would make sense.  Vine reviewers will review the product no matter how they enjoy it: their score will reflect how much they like it, but their liklihood of leaving a review in the first place shouldn't.  However, unpaid reviews might be more likely to be extreme, in either direction.  After all, if I go to a restaurant, I may feel compelled to leave a review either if I have a wonderful time (to reward the company and encourage others to enjoy it as well) or if it's a disaster (to "punish" the business and help save other people from suffering the same fate).  On the other hand, I probably wouldn't feel the need to rush home and leave a review to let everyone know that the food was pretty good, the wait time was average, prices seemed reasonable, etc.
 
-In order to see if this was the case, I decided to perform further analysis and look at the number of one star reviews left by Vine vs non-Vine reviewers.
+### Additional Study: Are unpaid non-Vine reviews always simply lower, or are they more extreme in either direction?
+
+In order to see if this was the case, I decided to perform further analysis and look at the number of one star reviews left by Vine vs non-Vine reviewers.  This time, `paid_one = paid_df.filter("star_rating=1").count()` was used to find ratings with one star as opposed to five.  After changing some variables around, a similar analysis was run, providing us with the following results:
+
+![Paid One Star Summary](https://github.com/Jeffstr00/Amazon_Vine_Analysis/blob/main/Resources/paid_onestar.png)
+
+For paid Vine reviews, one star ratings were very low at only 4.33%.  Maybe this is a case of companies with poor products not signing up for the Vine program to solicit reviews, or maybe it's a case of reviewers feeling bad for leaving a terrible review when they are being paid and the company provided them with the product.
+
+![Unpaid One Star Summary](https://github.com/Jeffstr00/Amazon_Vine_Analysis/blob/main/Resources/unpaid_onestar.png)
+
+On the other side of the coin, one star reviews were (relatively) much, much higher at 26.39%.  This is likely a result of the fact that having a terrible experience with a product is a strong catalyst for causing someone to choose to go out and write a review.
+
+Overall, it does appear that, instead of unpaid reviews always being higher, it is actually the case that **unpaid non-Vine reviews are more extreme in either direction, while paid Vine views are more evenly spread out and moderate**.  Unpaid reviews were 45.72% five star and 36.39% one star, while Vine reviews were 40.52% and 4.33% respectively.
